@@ -37,7 +37,10 @@ class MainActivity : ComponentActivity() {
                 Scaffold(
                     bottomBar = {
                         if (showBar) {
-                            NavigationBar {
+                            NavigationBar(
+                                containerColor = Coffee50,
+                                contentColor = Coffee900
+                            ) {
                                 val items = listOf(
                                     Triple(Screen.Home, "Кофейни", Icons.Default.Home),
                                     Triple(Screen.Wallet, "Кошелёк", Icons.Default.Wallet),
@@ -59,7 +62,14 @@ class MainActivity : ComponentActivity() {
                                                 launchSingleTop = true
                                                 restoreState = true
                                             }
-                                        }
+                                        },
+                                        colors = NavigationBarItemDefaults.colors(
+                                            selectedIconColor = Coffee900,
+                                            selectedTextColor = Coffee900,
+                                            unselectedIconColor = Coffee600,
+                                            unselectedTextColor = Coffee600,
+                                            indicatorColor = Coffee200
+                                        )
                                     )
                                 }
                             }

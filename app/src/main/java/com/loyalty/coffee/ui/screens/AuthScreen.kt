@@ -1,5 +1,6 @@
 package com.loyalty.coffee.ui.screens
-
+import com.loyalty.coffee.ui.navigation.Screen
+import com.loyalty.coffee.ui.viewmodel.AuthViewModel
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.RoundedCornerShape

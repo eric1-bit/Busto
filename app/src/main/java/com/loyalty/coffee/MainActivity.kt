@@ -18,6 +18,10 @@ import androidx.navigation.compose.*
 import com.loyalty.coffee.ui.navigation.Screen
 import com.loyalty.coffee.ui.screens.*
 import com.loyalty.coffee.ui.theme.CoffeeLoyaltyTheme
+import com.loyalty.coffee.ui.theme.Coffee50
+import com.loyalty.coffee.ui.theme.Coffee200
+import com.loyalty.coffee.ui.theme.Coffee600
+import com.loyalty.coffee.ui.theme.Coffee900
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint

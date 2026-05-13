@@ -1,3 +1,4 @@
+
 package com.loyalty.coffee.ui.screens
 
 import androidx.compose.foundation.background
@@ -11,6 +12,7 @@ import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.input.KeyboardType
+import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavController
@@ -45,26 +47,26 @@ fun AuthScreen(navController: NavController, viewModel: AuthViewModel = hiltView
             modifier = Modifier.size(48.dp),
             tint = Coffee900
         )
-
+        
         Spacer(modifier = Modifier.height(24.dp))
-
+        
         Text(
             "Вход по телефону",
             style = MaterialTheme.typography.headlineMedium,
             color = Coffee900
         )
-
+        
         Spacer(modifier = Modifier.height(8.dp))
-
+        
         Text(
             "Введите номер, чтобы начать\nкопить бонусы",
             style = MaterialTheme.typography.bodyMedium,
             color = Coffee700,
             textAlign = TextAlign.Center
         )
-
+        
         Spacer(modifier = Modifier.height(32.dp))
-
+        
         OutlinedTextField(
             value = phone,
             onValueChange = { if (it.length <= 11) phone = it },
@@ -83,9 +85,9 @@ fun AuthScreen(navController: NavController, viewModel: AuthViewModel = hiltView
                 unfocusedContainerColor = Coffee50
             )
         )
-
+        
         Spacer(modifier = Modifier.height(24.dp))
-
+        
         Button(
             onClick = { viewModel.register(phone) },
             modifier = Modifier

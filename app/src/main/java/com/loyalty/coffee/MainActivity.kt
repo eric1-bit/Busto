@@ -1,5 +1,5 @@
 package com.loyalty.coffee
-
+import com.loyalty.coffee.ui.navigation.Screen
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
